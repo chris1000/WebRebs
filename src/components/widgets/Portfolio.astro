@@ -1,0 +1,88 @@
+---
+const items = [
+	[
+		{
+			title: 'Alma Jean Collections',
+			link: 'https://almajeancollections.com/',
+		},
+		{
+			title: 'Boss Kidz Inc',
+			link: 'https://bosskidzinc.com/',
+		},
+		{
+			title: 'C-Gifted Interiors',
+			link: 'https://www.cgiftedinteriors.com/',
+		},
+		{
+			title: 'JCHS Accuracy',
+			link: 'https://chris1000.github.io/JCHSAccuracy/',
+		},
+		{
+			title: 'Lone Oak Retrievers',
+			link: 'https://loneoakretrievers.com/',
+		},
+		{
+			title: 'More Life Athletics',
+			link: 'https://morelifeathletics.net/',
+		},
+	],
+	[
+		{
+			title: 'Nfinite Soundz',
+			link: 'https://nfinitesoundz.com/',
+		},
+		{
+			title: 'Solutions4U',
+			link: 'https://solutions4u.co/',
+		},
+		{
+			title: 'South East Euro Motorsports',
+			link: 'https://www.southeasteuromotorsports.com/',
+		},
+		{
+			title: 'SEVWA',
+			link: 'https://www.sevwa.com/',
+		},
+		{
+			title: 'Thor Boats LLC',
+			link: 'https://thorboats.com/',
+		},
+		{
+			title: 'UM Astronomy & Physics Demo',
+			link: 'https://www.phy.olemiss.edu/AstroDemo/index.html',
+		},
+	],
+];
+---
+
+<section id="pastprojects" class="scroll-mt-16 relative" id="features">
+	<div class="absolute inset-0 bg-primary-50 dark:bg-slate-800 pointer-events-none" aria-hidden="true"></div>
+	<div class="relative px-3 py-16 mx-auto max-w-6xl lg:px-6 lg:py-20">
+		<div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+			<p class="text-base text-primary-600 dark:text-primary-200 font-semibold tracking-wide uppercase">
+				Years of Experience
+			</p>
+			<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">Past Projects</h2>
+			<p class="max-w-3xl mx-auto sm:text-center text-xl text-gray-600 dark:text-slate-400">
+				With years of combined experience you can rest easy knowing you're working with pros.
+			</p>
+		</div>
+		<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-2 items-start dark:text-white">
+			{
+				items.map((subitems) => (
+					<div class="space-y-8 sm:px-2">
+						{subitems.map(({ title, link }) => (
+							<div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-lg hover:shadow-lg transition dark:border dark:border-slate-800">
+								<div>
+									<a href={link} rel="noopener" target="_blank">
+										<h3 class="text-lg font-bold">{title}</h3>
+									</a>
+								</div>
+							</div>
+						))}
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>

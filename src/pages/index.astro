@@ -4,14 +4,11 @@ import { getCanonical, getHomePermalink } from '~/utils/permalinks';
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Features3 from '~/components/widgets/Features3.astro';
-import HighlightedPosts from '~/components/blog/HighlightedPosts.astro';
+import Services from '~/components/widgets/Services.astro';
+import Portfolio from '~/components/widgets/Portfolio.astro';
+import Difference from '~/components/widgets/Difference.astro';
+import Contact from '~/components/widgets/Contact.astro'
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const meta = {
 	title: SITE.title,
@@ -22,12 +19,9 @@ const meta = {
 
 <Layout {meta}>
 	<Hero />
-	<Features />
-	<Steps />
-	<Features2 />
-	<Features3 />
-	<HighlightedPosts />
+	<Services />
+	<Difference />
+	<Portfolio />
+	<Contact />
 	<FAQs />
-	<Stats />
-	<CallToAction />
 </Layout>

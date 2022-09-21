@@ -3,61 +3,60 @@ import { Icon } from 'astro-icon';
 
 const items = [
 	{
-		title: 'Headers',
+		title: 'Website Design',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-		icon: 'flat-color-icons:home',
+		icon: 'flat-color-icons:multiple-devices',
 	},
 	{
-		title: 'Footers',
+		title: 'Copywriting',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-		icon: 'flat-color-icons:faq',
+		icon: 'flat-color-icons:document',
 	},
 	{
-		title: 'Features',
+		title: 'Local SEO',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-		icon: 'flat-color-icons:video-projector',
+		icon: 'flat-color-icons:shop',
 	},
 	{
-		title: 'Call-to-Action',
+		title: 'eCommerce',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-		icon: 'flat-color-icons:video-projector',
+		icon: 'flat-color-icons:deployment',
 	},
 	{
-		title: 'Pricing',
+		title: 'Custom Email',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-		icon: 'flat-color-icons:calculator',
+		icon: 'flat-color-icons:invite',
 	},
 	{
-		title: 'Testimonial',
+		title: 'Logo/ Graphic Design',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-		icon: 'flat-color-icons:voice-presentation',
+		icon: 'flat-color-icons:edit-image',
 	},
 ];
 ---
 
-<section class="relative">
+<section id="services" class="relative scroll-mt-16">
 	<div class="absolute inset-0 bg-primary-50 dark:bg-slate-800 pointer-events-none mb-32" aria-hidden="true"></div>
 	<div class="relative max-w-6xl mx-auto px-4 sm:px-6">
 		<div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
 			<div class="mb-8 text-center">
-				<p class="text-base text-primary-600 dark:text-primary-200 font-semibold tracking-wide uppercase">Components</p>
-				<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
-					Most used widgets
-				</h2>
+				<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">Services</h2>
 				<p class="max-w-3xl mx-auto text-center text-xl text-gray-600 dark:text-slate-400">
-					Provides frequently used components for building websites using Tailwind CSS
+					We utilize the latest and greatest technology to provide a unquie, premium experience at a fraction of the
+					cost.We utilize the latest and greatest technology to provide a unique and premium experience at a fraction of
+					the cost.
 				</p>
 			</div>
 			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start my-12 dark:text-white">
 				{
 					items.map(({ title, description, icon }) => (
-						<div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+						<div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-lg hover:shadow-lg transition dark:border dark:border-slate-800">
 							<div class="flex items-center mb-4">
 								<Icon name={icon} class="w-12 h-12" />
 
