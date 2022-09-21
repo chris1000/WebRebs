@@ -1,8 +1,7 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
-
 import { defineConfig } from 'astro/config';
-
+import compress from "astro-compress";
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import image from '@astrojs/image';
@@ -26,6 +25,7 @@ export default defineConfig({
 				applyBaseStyles: false,
 			},
 		}),
+		compress(),
 		sitemap(),
 		image(),
 
